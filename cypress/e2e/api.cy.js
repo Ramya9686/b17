@@ -42,5 +42,20 @@ describe ("API Test Automation Demo", () => {
 
 
 
+    cy.request("POST", "https://reqres.in/api/users",payload).then((reponse)=> {
+
+
+    expect(reponse.status).to.equal(400)
+
+    expect(response.body).to.have.property("job", "QA")
+
+
+
+
+    })
+
+
+
 
 })
+

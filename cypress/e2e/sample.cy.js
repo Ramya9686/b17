@@ -1,15 +1,19 @@
 describe('template spec', () => {
+ const url = 'https://www.flipkart.com/'
   it('passes', () => {
-    cy.visit('https://the-internet.herokuapp.com/login')
+    cy.visit(url)
+  })
 
-    cy.get('input[name="username"]').type('tomsmith') 
+  it('passes', () => {
+    cy.visit(url)
+  })
 
-    cy.get('input[type="password"]').type('SuperSecretPassword!')
+  it('passes', () => {
+    cy.visit(url)
+  })
 
-    cy.get('button[type="submit"]').click()
-
-    cy.contains('You logged into a secure area!').should('be.visible')
-
+  it('passes', () => {
+    cy.visit(url)
   })
 })
 

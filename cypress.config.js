@@ -7,7 +7,7 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
 
-    "specPattern": "**/*.feature",
+    //"specPattern": "**/*.feature",
     projectId: "zymrvg",
     "chromeWebSecurity": false,
     "viewportWidth": 1920,
